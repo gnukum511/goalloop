@@ -1,0 +1,5 @@
+node_modules/
+.goalloop/
+.env
+*.log
+dist/

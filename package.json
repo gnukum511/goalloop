@@ -1,0 +1,28 @@
+{
+  "name": "goalloop",
+  "version": "0.1.0",
+  "description": "Cost-tiered goal-loop orchestrator for the Claude Agent SDK: Fable 5 plans and reviews, Sonnet 5 runs the loop, Opus 4.8 handles escalations, Haiku 4.5 verifies. Stacks with pxpipe image compression.",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/orchestrator.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "claude",
+    "agent-sdk",
+    "orchestrator",
+    "multi-agent",
+    "goal-loop",
+    "pxpipe",
+    "cost-optimization"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "typescript": "^5.9.3"
+  }
+}
