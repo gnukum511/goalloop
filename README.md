@@ -1,5 +1,8 @@
 # goalloop
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub](https://img.shields.io/github/stars/gnukum511/goalloop?style=social)](https://github.com/gnukum511/goalloop)
+
 **A cost-tiered goal-loop orchestrator for the Claude Agent SDK — frontier intelligence only where it changes outcomes, cheap models everywhere else, and [pxpipe](https://github.com/teamchong/pxpipe) image compression on top.**
 
 Most multi-agent setups put the smartest model in the manager seat — the highest-token-volume job in the system. Every iteration it re-reads the growing context (billed as input) and writes long reasoning (billed as output at frontier rates). goalloop inverts that: the frontier model consults, a cheap model manages, and workers earn their way up an escalation ladder.
@@ -87,4 +90,4 @@ pxpipe logs both sides of every request (billed usage vs. a free `count_tokens` 
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE). Contributions welcome: [CONTRIBUTING.md](CONTRIBUTING.md).
