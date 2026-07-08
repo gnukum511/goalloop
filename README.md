@@ -31,6 +31,26 @@ flowchart TB
 
 ## Quick start
 
+### Global install (any project)
+
+```bash
+git clone https://github.com/gnukum511/goalloop.git
+cd goalloop && pnpm run install:global   # → ~/.local/bin/goalloop + GOALLOOP_HOME in ~/.zshrc
+```
+
+Then from **any repo**:
+
+```bash
+cd /path/to/your/project
+export ANTHROPIC_API_KEY=sk-ant-...
+goalloop "Build a REST endpoint for X — success when pnpm test exits 0"
+goalloop --resume
+```
+
+State checkpoints to `./.goalloop/state.json` in the project you run from. Lessons accumulate in `./memory/` across runs.
+
+### Local / dev checkout
+
 ```bash
 pnpm install
 export ANTHROPIC_API_KEY=sk-ant-...

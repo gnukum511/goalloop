@@ -3,7 +3,19 @@
   "version": "0.1.0",
   "description": "Cost-tiered goal-loop orchestrator for the Claude Agent SDK: Fable 5 plans and reviews, Sonnet 5 runs the loop, Opus 4.8 handles escalations, Haiku 4.5 verifies. Stacks with pxpipe image compression.",
   "type": "module",
+  "bin": {
+    "goalloop": "./bin/goalloop.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
   "scripts": {
+    "install:global": "bash scripts/install-global.sh",
     "start": "tsx src/orchestrator.ts",
     "typecheck": "tsc --noEmit"
   },
